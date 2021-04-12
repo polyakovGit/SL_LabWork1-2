@@ -1,0 +1,104 @@
+.hover-effect {
+    transition: 3s;
+}
+
+.hover-effect:hover {
+    transform: scale(2);
+    box-shadow: 0px 0px 16px 2px rgba(34, 6, 6, 0.75);
+}
+
+.animation1 {
+    animation: trans1 3s infinite;
+}
+
+
+.animation2:hover {
+    animation: trans2 3s linear;
+}
+
+@keyframes trans1 {
+    90% {
+        transform: none;
+    }
+
+    95% {
+        transform: scaleY(0.1);
+        box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.75);
+        width: 20%;
+        border-radius: 5%;
+        filter: invert();
+    }
+}
+
+@keyframes trans2 {
+    50% {
+        transform: scale(2);
+        box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.75);
+        width: 100%;
+        filter: blur(5px);
+        opacity: 50%;
+        border-radius: 50%;
+    }
+}
+
+/* svg */
+
+#circle1 {
+    animation-name: cirlce1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  #circle2 {
+    animation-name: cirlce2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  #circle3 {
+    animation-name: cirlce3;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes cirlce1 {
+    25% {
+      cy: 0%;
+      fill: none;
+      stroke: grey;
+    }
+    50% {
+      cy: 50%;
+      fill: #0d9118;
+      stroke: white;
+    }
+  }
+  
+  @keyframes cirlce2 {
+    25% {
+      cx: 100%;
+      fill: none;
+      stroke: grey;
+    }
+    50% {
+      cx: 52%;
+      fill: #f3ba00;
+      stroke: white;
+    }
+  }
+
+  @keyframes cirlce3 {
+    25%{
+      cx: 0%;
+      fill: none;
+      stroke: grey;
+    }
+    50% {
+      cx: 52%;
+      fill: #aa0d0d;
+      stroke: white;
+    }
+  }
